@@ -49,6 +49,8 @@ $(function() {
   //     .addClass("active");
   // });
 
+  
+
   $("html").easeScroll({
     frameRate: 60,
     animationTime: 1000,

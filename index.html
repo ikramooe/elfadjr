@@ -20,8 +20,17 @@
         body {
             text-align: right !important;
         }
+        .search-icon {
+            background-color: transparent !important;
+            color: white !important;
+
+        }
+        .form-search {
+            height: 25px !important;
+        }
     </style>
     <!-- endinject -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
 
 <body>
@@ -33,32 +42,28 @@
                     <nav class="navbar navbar-expand-lg navbar-light">
                        
                         <div class="navbar-light">
-                            <div class="d-flex align-items-center">
+                            <div class="d-flex align-items-center justify-content-between">
                                 <div>
                                     <a class="navbar-brand" href="#"><img src="assets/images/logo.png"
                                             alt="" style="height: 50px;width:auto" /></a>
                                 </div>  
-                                <div>
-                                    <button class="navbar-toggler" type="button" data-target="#navbarSupportedContent"
-                                        aria-controls="navbarSupportedContent" aria-expanded="false"
-                                        aria-label="Toggle navigation">
-                                        <span class="navbar-toggler-icon"></span>
-                                    </button>
-                                    <div class="navbar-collapse justify-content-center collapse"
-                                        id="navbarSupportedContent">
-                                        <ul class="navbar-nav d-lg-flex justify-content-between align-items-center">
-                                            <li>
-                                                <button class="navbar-close">
-                                                    <i class="mdi mdi-close"></i>
-                                                </button>
-                                            </li>
-
-                                        </ul>
+                                <div class="input-group rounded col-lg-3 input-group-sm" >
+                                    <div class="input-group-prepend">
+                                    <span class="input-group-text search-icon border-0" id="search-addon">
+                                        <i class="fa fa-search"></i>
+                                      </span>
+                                    <input type="search" class="form-control form-search rounded" placeholder="بحث" aria-label="Search" aria-describedby="search-addon"/>
                                     </div>
-                                </div>
-                               
+                                  </div>
+                                
                             </div>
+                           
+                           
+                            
                         </div>
+
+                       
+                  
                     </nav>
                 </div>
             </header>
@@ -81,14 +86,14 @@
                 <div class="container">
             
                     <div class="row mb-4">
-                        <div class="col-md-3"><button type="button" class="btn btn-outline-primary btn-lg btn-block" dir="rtl">Primary</button></div>
-                        <div class="col-md-3"><button type="button" class="btn btn-outline-primary btn-lg btn-block" dir="rtl">Primary</button></div>
-                        <div class="col-md-3"><button type="button" class="btn btn-outline-primary btn-lg btn-block" dir="rtl">Primary</button></div>
-                        <div class="col-md-3"><button type="button" class="btn btn-outline-primary btn-lg btn-block" dir="rtl">Primary</button></div>
+                        <div class="col-md-3"><button type="button" class="btn btn-outline-primary btn-lg btn-block" dir="rtl">وطني</button></div>
+                        <div class="col-md-3"><button type="button" class="btn btn-outline-primary btn-lg btn-block" dir="rtl">دولي</button></div>
+                        <div class="col-md-3"><button type="button" class="btn btn-outline-primary btn-lg btn-block" dir="rtl">اقتصاد</button></div>
+                        <div class="col-md-3"><button type="button" class="btn btn-outline-primary btn-lg btn-block" dir="rtl">رياضة</button></div>
                       </div>
 
 
-                    <div class="row" data-aos="fade-up">
+                    <div class="row row-eq-height" data-aos="fade-up">
                         <div class="col-xl-8 stretch-card grid-margin">
 
                             <div class="position-relative">
@@ -165,22 +170,32 @@
 
                             </div>
                         </div>
-                        <div class="col-lg-4 grid-margin" >
+                        <div class=" col-lg-4 aligh-items-between grid-margin " >
                           
-                            <div class="row grid-margin">
-                                <div class="card  "> <img class="card-img" src="https://static.pingendo.com/cover-bubble-light.svg" alt="Card image">
-                                    <div class="card-img-overlay d-flex justify-content-center align-items-center" >
-                                      <h2 class="text-primary">Card title</h2>
-                                    </div>
-                                  </div>
+                            <div class="row h-100">
+                                <div class="col-12">
+                                    <div class="card align-items-center h-100"> <img class="card-img h-100" src="assets/images/journal.jpg" alt="Card image">
+                                        <div class="card-img-overlay d-flex justify-content-center m-auto align-items-center h-25 bg-primary " >
+                                            <h2 class="text-white">تحميل عدد اليوم</h2>
+                                        
+                                        </div>
+                                      </div>
+                                </div>
+                                <div class="w-100"></div>
+
+                                <div class="col">
+                                    <div class="card h-100"> <img class="card-img position-relative h-100" src="assets/images/assatir.jpg" alt="Card image">
+                                        <span class="badge badge-pill badge-primary position-absolute" style="left:10px; top:10px;" >25 مقال</span>
+                                        <div class=" position-absolute text-center w-100 bg-primary rounded-bottom" style="bottom:0">
+                                          <h2 class="text-white my-1">أساطير</h2>
+                                        </div>
+                                      </div>
+                                </div>
+                               
+                              
                             </div>
-                            <div class="row">
-                                <div class="card "> <img class="card-img" src="https://static.pingendo.com/cover-bubble-light.svg" alt="Card image">
-                                    <div class="card-img-overlay d-flex justify-content-center align-items-center">
-                                      <h2 class="text-primary">Card title</h2>
-                                    </div>
-                                  </div>
-                            </div>
+                            
+                          
                            
                             
                             
@@ -372,16 +387,18 @@
                             <div class="row mb-3">
                                 
                                     <div class="col-6 pl-0">
-                                        <div class="card  "> <img class="card-img" src="https://static.pingendo.com/cover-bubble-light.svg" alt="Card image">
-                                            <div class="card-img-overlay d-flex justify-content-center align-items-center" >
-                                              <h2 class="text-primary">Card title</h2>
+                                        <div class="card  "> <img class="card-img" src="assets/images/sante.jpg" alt="Card image">
+                                            <span class="badge badge-pill badge-primary position-absolute" style="left:10px; top:10px;" >25 مقال</span>
+                                            <div class="position-absolute text-center w-100 bg-primary rounded-bottom" style="bottom:0" >
+                                              <h2 class="text-white my-1">صحة</h2>
                                             </div>
                                           </div>
                                     </div>
                                     <div class="col-6 pl-0">
-                                        <div class="card "> <img class="card-img" src="https://static.pingendo.com/cover-bubble-light.svg" alt="Card image">
-                                            <div class="card-img-overlay d-flex justify-content-center align-items-center">
-                                              <h2 class="text-primary">Card title</h2>
+                                        <div class="card "> <img class="card-img" src="assets/images/culture.jpg" alt="Card image">
+                                            <span class="badge badge-pill badge-primary position-absolute " style="left:10px; top:10px;" >25 مقال</span>
+                                            <div class="position-absolute text-center w-100 bg-primary rounded-bottom " style="bottom:0">
+                                              <h2 class="text-white my-1">ثقافة</h2>
                                             </div>
                                           </div>
                                     </div>  
@@ -389,8 +406,9 @@
                             </div>
                             <div class="row pr-3">
                                         <div class="card"> <img class="card-img" src="/assets/images/tech.jpg" alt="Card image">
-                                            <div class="card-img-overlay d-flex justify-content-center align-items-center" >
-                                              <h2 class="text-primary">Card title</h2>
+                                            <span class="badge badge-pill badge-primary position-absolute" style="left:10px; top:10px;" >25 مقال</span>
+                                            <div class="position-absolute text-center w-100 bg-primary rounded-bottom" style="bottom:0" >
+                                              <h2 class="text-white my-1">تكنولوجيا</h2>
                                             </div>
                                           </div>
                                     
@@ -809,6 +827,7 @@
     <script src="./assets/js/demo.js"></script>
     <script src="./assets/js/jquery.easeScroll.js"></script>
     <!-- End custom js for this page-->
+   
 </body>
 
 </html>

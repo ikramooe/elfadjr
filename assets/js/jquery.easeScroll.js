@@ -335,4 +335,6 @@ $.fn.easeScroll = function(options) {
       u("mousewheel", n, { passive: false }),
       u("load", t, { passive: false }));
   })();
+
+  
 };
