@@ -10755,7 +10755,7 @@ footer {
 }
 
 footer .footer-top {
-  background: #032a63;
+  background: #000;
   padding: 74px 0 48px 0;
 }
 
@@ -10814,7 +10814,7 @@ footer .footer-top .count {
 
 footer .footer-bottom {
   padding: 24px 0 48px 0;
-  background: #032a63;
+  background: #000;
 }
 
 .error-wrap {
