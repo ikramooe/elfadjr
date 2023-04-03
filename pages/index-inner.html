@@ -7,22 +7,40 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
     <title>El fadjr</title>
     <!-- plugin css for this page -->
-    <link
-      rel="stylesheet"
-      href=".././assets/vendors/mdi/css/materialdesignicons.min.css"
-    />
+    <link rel="stylesheet" href="../assets/vendors/mdi/css/materialdesignicons.min.css" />
     <link rel="stylesheet" href="../assets/vendors/aos/dist/aos.css/aos.css" />
+
     <!-- End plugin css for this page -->
     <link rel="shortcut icon" href="../assets/images/favicon.png" />
+
     <!-- inject:css -->
     <link rel="stylesheet" href="../assets/css/style.css">
-    <!-- endinject -->
     <style>
-      body {
-        text-align: right !important;
-      }
+        body {
+            text-align: right !important;
+        }
+        .search-icon {
+            background-color: transparent !important;
+            color: white !important;
+
+        }
+        .form-search {
+            height: 25px !important;
+        }
+        .swiper-button-next, .swiper-button-prev {
+  color: #fff !important;
+  padding: 22px;
+  border-radius: 50%; }
+  .swiper-button-next::after, .swiper-button-prev::after {
+    transform: scale(0.5); }
     </style>
-  </head>
+    <link
+    rel="stylesheet"
+    href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css"
+  />
+    <!-- endinject -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
 
   <body>
     <div class="container-scroller">
@@ -31,128 +49,91 @@
         <header id="header">
           <div class="container">
               <nav class="navbar navbar-expand-lg navbar-light">
-                  <div class="navbar-top">
-                      <div class="d-flex justify-content-between align-items-center">
-                          <ul class="social-media">
-                              <li>
-                                  <a href="#">
-                                      <i class="mdi mdi-facebook"></i>
-                                  </a>
-                              </li>
-                              <li>
-                                  <a href="#">
-                                      <i class="mdi mdi-youtube"></i>
-                                  </a>
-                              </li>
-                              <li>
-                                  <a href="#">
-                                      <i class="mdi mdi-twitter"></i>
-                                  </a>
-                              </li>
-                          </ul>
-                          <div class="d-flex">
-                                  <span class="ml-3 text-danger">الأربعاء 4 مارس 2040</span>
-                                  <span class="text-danger">30 درجة مئوية ، لندن</span>
-                              </div>
-
-                             
-                       
-                      </div>
-                  </div>
-                  <div class="navbar-bottom">
-                      <div class="d-flex align-items-center">
+                 
+                  <div class="navbar-light">
+                      <div class="d-flex align-items-center justify-content-between">
                           <div>
-                              <a class="navbar-brand" href="#"><img src="assets/images/logo.png"
+                              <a class="navbar-brand" href="/"><img src="/assets/images/logo.png"
                                       alt="" style="height: 50px;width:auto" /></a>
                           </div>  
-                          <div>
-                              <button class="navbar-toggler" type="button" data-target="#navbarSupportedContent"
-                                  aria-controls="navbarSupportedContent" aria-expanded="false"
-                                  aria-label="Toggle navigation">
-                                  <span class="navbar-toggler-icon"></span>
-                              </button>
-                              <div class="navbar-collapse justify-content-center collapse"
-                                  id="navbarSupportedContent">
-                                  <ul class="navbar-nav d-lg-flex justify-content-between align-items-center">
-                                      <li>
-                                          <button class="navbar-close">
-                                              <i class="mdi mdi-close"></i>
-                                          </button>
-                                      </li>
-                                      <li class="nav-item active">
-                                          <a class="nav-link" href="/index.html"> الصفحة الرئيسية</a>
-                                      </li>
-                                      <li class="nav-item">
-                                          <a class="nav-link" href="/pages/business.html">حدث اليوم</a>
-                                      </li>
-                                      <li class="nav-item">
-                                          <a class="nav-link" href="/pages/business.html">الدولي</a>
-                                      </li>
-                                      <li class="nav-item">
-                                          <a class="nav-link" href="/pages/business.html">المجتمع</a>
-                                      </li>
-                                      <li class="nav-item">
-                                          <a class="nav-link" href="/pages/business.html">الرياضي</a>
-                                      </li>
-                                      <li class="nav-item">
-                                          <a class="nav-link" href="/pages/business.html">الاقتصادي</a>
-                                      </li>
-                                      <li class="nav-item">
-                                          <a class="nav-link" href="/pages/business.html">السياسي</a>
-                                      </li>
-                                      <li class="nav-item">
-                                          <a class="nav-link" href="/pages/business.html">صحة</a>
-                                      </li>
-                                      <li class="nav-item">
-                                          <a class="nav-link" href="/pages/business.html">اساطير</a>
-                                      </li>
-                                      <li class="nav-item">
-                                          <a class="nav-link" href="/pages/contactus.html"> اتصل بنا</a>
-                                      </li>
-                                  </ul>
+                          <div class="input-group rounded col-lg-3 input-group-sm" >
+                              <div class="input-group-prepend">
+                              <span class="input-group-text search-icon border-0" id="search-addon">
+                                  <i class="fa fa-search"></i>
+                                </span>
+                              <input type="search" class="form-control form-search rounded" placeholder="بحث" aria-label="Search" aria-describedby="search-addon"/>
                               </div>
-                          </div>
-                         
+                            </div>
+                          
                       </div>
+                     
+                     
+                      
                   </div>
+
+                 
+            
               </nav>
           </div>
       </header>
 
       <!-- partial -->
-      <div class="flash-news-banner">
-          <div class="container">
-              <div class="d-lg-flex align-items-center justify-content-between">
-                  <div class="d-flex align-items-center">
-                      <span class="badge badge-dark ml-3" dir="rtl">اخبار عاجلة</span>
-                      <p class="mb-0">
-                          كان Lorem Ipsum هو النص الوهمي القياسي في الصناعة على الإطلاق
-                          منذ القرن السادس عشر.
-                      </p>
-                  </div>
-                  <div class="d-flex">
-                      <span class="text-danger"></span>
-                      <button class="mr-3  btn btn-danger">تحميل اصدار اليوم</button>
-                  </div>
-              </div>
-          </div>
-      </div>
-        <div class="content-wrapper">
-          <div class="container">
-            <div class="col-sm-12">
-              <div class="row" >
-
-                <div class="col-lg-12 stretch-card grid-margin">
-
-                    <img src="../assets/images/body_card1.png" alt="" style="width:100%">
-
+      <div class="flash-news-banner fixed-bottom">
+        <div class="container">
+            <div class="d-lg-flex align-items-center justify-content-between">
+                <div class="d-flex align-items-center">
+                    <span class="badge badge-dark ml-3" dir="rtl">اخبار عاجلة</span>
+                    <p class="mb-0">
+                        كان Lorem Ipsum هو النص الوهمي القياسي في الصناعة على الإطلاق
+                        منذ القرن السادس عشر.
+                    </p>
                 </div>
             </div>
+        </div>
+    </div>
+        <div class="content-wrapper pt-4">
+          <div class="container">
+            <div class="swiper-container swiper mb-4">
+                        
+              <!-- Additional required wrapper -->
+              <div class="swiper-wrapper px-sm-4 px-md-0">
+                <!-- Slides -->
+                <div class="swiper-slide">
+                  <a href="pages/business.html"  rel="noopener noreferrer">
+                  <button type="button" style="width:100%" class="btn btn-primary btn-lg " dir="rtl">وطني</button>
+              </a>
+                </div>
+
+                <div class="swiper-slide">
+                  <a href="pages/business.html"  rel="noopener noreferrer" style="text-decoration:none"><button type="button" class="btn btn-primary btn-lg btn-block" dir="rtl" >دولي</button>
+                  </a>
+                </div>
+
+                <div class="swiper-slide">
+                  <a href="pages/business.html"  rel="noopener noreferrer" style="text-decoration:none" ><button type="button" class="btn btn-primary btn-lg btn-block" dir="rtl">اقتصاد</button>
+                  </a>
+              </div>
+
+              <div class="swiper-slide">
+                  <a href="pages/business.html"  rel="noopener noreferrer" style="text-decoration:none"><button type="button" class="btn btn-primary btn-lg btn-block" dir="rtl">رياضة</button>
+                  </a>
+              </div>
+              </div>
+            
+              <!-- If we need navigation buttons -->
+              <div class="swiper-button-prev" style="right:-10px"></div>
+              <div class="swiper-button-next"style="left:-10px"></div>
+            
+              <!-- If we need scrollbar -->
+            
+            </div>
+            <div class="col-12">
+              
               <div class="card" data-aos="fade-up">
 
                 <div class="card-body">
                   <div class="row">
-                    <div class="col-lg-8">
+                    <div class="col">
                       <div>
                         <h1 class="font-weight-600 mb-1">
                           صرخت فوق الضوضاء المفاجئة.
@@ -295,192 +276,22 @@
                           </div>
                         </div>
 
-                        <div class="testimonial">
-                          <div
-                            class="d-lg-flex justify-content-between align-items-center"
-                          >
-                            <div class="d-flex align-items-center mb-3">
-                              <div class="rotate-img">
-                                <img
-                                  src="../assets/images/faces/face1.jpg"
-                                  alt="banner"
-                                  class="img-fluid img-rounded ml-3"
-                                />
-                              </div>
-                              <div>
-                                <p class="fs-12 mb-1 line-height-xs">
-                                  المؤلف
-                                </p>
-                                <p
-                                  class="fs-16 font-weight-600 mb-0 line-height-xs"
-                                >
-                                نوت جولشتاين
-                                </p>
-                              </div>
-                            </div>
-                            <ul class="social-media mb-3">
-                              <li>
-                                <a href="#">
-                                  <i class="mdi mdi-facebook"></i>
-                                </a>
-                              </li>
-                              <li>
-                                <a href="#">
-                                  <i class="mdi mdi-youtube"></i>
-                                </a>
-                              </li>
-                              <li>
-                                <a href="#">
-                                  <i class="mdi mdi-twitter"></i>
-                                </a>
-                              </li>
-                            </ul>
-                          </div>
-                          <p class="fs-12">
-                            present facilisis vulputate venenatis. في سهولة
-                            placerat arcu ، في الوقت المناسب لكتابة aliquet quis. عدد صحيح
-                            lacinia في ligula eu sodales. Proin غير لوريم
-                            iaculis ، القول المأثور لوريم quis ، bibendum leo.
-                          </p>
-                        </div>
+                      
                       
                       </div>
                     </div>
-                    <div class="col-lg-4">
-                      <img src="../assets/images/body_card2.png" style="width:100%"
-                            alt="">
-                      <h2 class="mt-3 text-primary font-weight-600">
-                        أحدث الأخبار
-                      </h2>
-                      <div class="row">
-                        <div class="col-sm-12">
-                          <div class="border-bottom pb-4 pt-4">
-                            <div class="row">
-                              <div class="col-sm-8">
-                                <h5 class="font-weight-600 mb-1">
-                                  طرق للبقاء اجتماعيًا على الإنترنت أثناء التواجد في نفسك ..
-                                </h5>
-                                <p class="fs-13 text-muted mb-0">
-                                  <span class="mr-2">صورة </span>منذ 10 دقيقة
-                                </p>
-                              </div>
-                              <div class="col-sm-4">
-                                <div class="rotate-img">
-                                  <img
-                                    src="../assets/images/inner/inner_7.jpg"
-                                    alt="banner"
-                                    class="img-fluid"
-                                  />
-                                </div>
-                              </div>
-                            </div>
-                          </div>
-                        </div>
-                      </div>
-                      <div class="row">
-                        <div class="col-sm-12">
-                          <div class="border-bottom pb-4 pt-4">
-                            <div class="row">
-                              <div class="col-sm-8">
-                                <h5 class="font-weight-600 mb-1">
-                                  لاعبي الدوري الإنجليزي الممتاز ينضمون إلى الأعمال الخيرية ..
-                                </h5>
-                                <p class="fs-13 text-muted mb-0">
-                                  <span class="mr-2">صورة </span>منذ 10 دقيقة
-                                </p>
-                              </div>
-                              <div class="col-sm-4">
-                                <div class="rotate-img">
-                                  <img
-                                    src="../assets/images/inner/inner_8.jpg"
-                                    alt="banner"
-                                    class="img-fluid"
-                                  />
-                                </div>
-                              </div>
-                            </div>
-                          </div>
-                        </div>
-                      </div>
-                      <div class="row">
-                        <div class="col-sm-12">
-                          <div class="pt-4">
-                            <div class="row">
-                              <div class="col-sm-8">
-                                <h5 class="font-weight-600 mb-1">
-                                  تغير مجلس ألعاب القوى في المملكة المتحدة موقفه من ..
-                                </h5>
-                                <p class="fs-13 text-muted mb-0">
-                                  <span class="mr-2">صورة </span>منذ 10 دقيقة
-                                </p>
-                              </div>
-                              <div class="col-sm-4">
-                                <div class="rotate-img">
-                                  <img
-                                    src="../assets/images/inner/inner_9.jpg"
-                                    alt="banner"
-                                    class="img-fluid"
-                                  />
-                                </div>
-                              </div>
-                            </div>
-                          </div>
-                        </div>
-                      </div>
-                      <div class="trending">
-                        <h2 class="mb-4 text-primary font-weight-600">
-                          الشائع
-                        </h2>
-                        <div class="mb-4">
-                          <div class="rotate-img">
-                            <img
-                              src="../assets/images/inner/inner_10.jpg"
-                              alt="banner"
-                              class="img-fluid"
-                            />
-                          </div>
-                          <h3 class="mt-3 font-weight-600">
-                            فيروس يقتل عضوا في هيئة المستشارين العليا لإيران
-                          </h3>
-                          <p class="fs-13 text-muted mb-0">
-                            <span class="mr-2">صورة </span>منذ 10 دقيقة
-                          </p>
-                        </div>
-                        <div class="mb-4">
-                          <div class="rotate-img">
-                            <img
-                              src="../assets/images/inner/inner_11.jpg"
-                              alt="banner"
-                              class="img-fluid"
-                            />
-                          </div>
-                          <h3 class="mt-3 font-weight-600">
-                            فيروس يقتل عضوا في هيئة المستشارين العليا لإيران
-                          </h3>
-                          <p class="fs-13 text-muted mb-0">
-                            <span class="mr-2">صورة </span>منذ 10 دقيقة
-                          </p>
-                        </div>
-                        <div class="mb-4">
-                          <div class="rotate-img">
-                            <img
-                              src="../assets/images/inner/inner_12.jpg"
-                              alt="banner"
-                              class="img-fluid"
-                            />
-                          </div>
-                          <h3 class="mt-3 font-weight-600">
-                            فيروس يقتل عضوا في هيئة المستشارين العليا لإيران
-                          </h3>
-                          <p class="fs-13 text-muted mb-0">
-                            <span class="mr-2">صورة </span>منذ 10 دقيقة
-                          </p>
-                        </div>
-                      </div>
-                    </div>
+                  
                   </div>
                 </div>
               </div>
+              <div class="row mt-3" >
+
+                <div class="col-lg-12 stretch-card grid-margin">
+
+                    <img src="../assets/images/body_card1.png" alt="" style="width:100%">
+
+                </div>
+            </div>
             </div>
           </div>
         </div>
@@ -493,7 +304,7 @@
               <div class="container">
                   <div class="row">
                       <div class="col-sm-5">
-                          <img src="../assets/images/logo.png" class="footer-logo" alt="" />
+                          <img src="../assets/images/logo.png" class="footer-logo w-75" alt="" />
                           <h5 class="font-weight-normal mt-4 mb-5">
                               الصحيفة هي موقع الويب الخاص بك للأخبار والترفيه والموسيقى. نحن
                               تزويدك بآخر الأخبار ومقاطع الفيديو مباشرة من
@@ -617,9 +428,9 @@
                           <div class="d-sm-flex justify-content-between align-items-center">
                               <div class="fs-14 font-weight-600">
                                   © 2023 @ <a href="https://www.bootstrapdash.com/" target="_blank"
-                                      class="text-white"> El fadjr</a>. All rights reserved.
+                                      class="text-white"> el fadjr </a>. All rights reserved.
                               </div>
-                             
+                              
                           </div>
                       </div>
                   </div>
@@ -641,5 +452,44 @@
     <script src="../assets/js/demo.js"></script>
     <script src="../assets/js/jquery.easeScroll.js"></script>
     <!-- End custom js for this page-->
+        <!-- End custom js for this page-->
+        <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
+        <script>
+            const swiper = new Swiper('.swiper', {
+      // Optional parameters
+    slidesPerView: 4,
+      loop: true,
+      breakpoints: {
+                0: {
+                    slidesPerView: 2,
+                    spaceBetween: 16
+                },
+                600: {
+                    slidesPerView: 2,
+                    spaceBetween: 16
+                },
+                917: {
+                    slidesPerView: 4,
+                    spaceBetween: 10
+                },
+                // when window width is >= 1250px
+                1250: {
+                    slidesPerView: 4,
+                    spaceBetween: 10
+                },
+            },
+    
+      // If we need pagination
+      
+    
+      // Navigation arrows
+      navigation: {
+        nextEl: '.swiper-button-next',
+        prevEl: '.swiper-button-prev',
+      },
+    
+    
+    });
+        </script>
   </body>
 </html>
