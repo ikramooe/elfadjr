@@ -7,22 +7,40 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
     <title>El fadjr</title>
     <!-- plugin css for this page -->
-    <link
-      rel="stylesheet"
-      href=".././assets/vendors/mdi/css/materialdesignicons.min.css"
-    />
+    <link rel="stylesheet" href="../assets/vendors/mdi/css/materialdesignicons.min.css" />
     <link rel="stylesheet" href="../assets/vendors/aos/dist/aos.css/aos.css" />
+
     <!-- End plugin css for this page -->
     <link rel="shortcut icon" href="../assets/images/favicon.png" />
+
     <!-- inject:css -->
     <link rel="stylesheet" href="../assets/css/style.css">
-    <!-- endinject -->
     <style>
-      body {
-        text-align: right !important;
-      }
+        body {
+            text-align: right !important;
+        }
+        .search-icon {
+            background-color: transparent !important;
+            color: white !important;
+
+        }
+        .form-search {
+            height: 25px !important;
+        }
+        .swiper-button-next, .swiper-button-prev {
+  color: #fff !important;
+  padding: 22px;
+  border-radius: 50%; }
+  .swiper-button-next::after, .swiper-button-prev::after {
+    transform: scale(0.5); }
     </style>
-  </head>
+    <link
+    rel="stylesheet"
+    href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css"
+  />
+    <!-- endinject -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
 
   <body>
     <div class="container-scroller">
@@ -31,96 +49,36 @@
         <header id="header">
           <div class="container">
               <nav class="navbar navbar-expand-lg navbar-light">
-                  <div class="navbar-top">
-                      <div class="d-flex justify-content-between align-items-center">
-                          <ul class="social-media">
-                              <li>
-                                  <a href="#">
-                                      <i class="mdi mdi-facebook"></i>
-                                  </a>
-                              </li>
-                              <li>
-                                  <a href="#">
-                                      <i class="mdi mdi-youtube"></i>
-                                  </a>
-                              </li>
-                              <li>
-                                  <a href="#">
-                                      <i class="mdi mdi-twitter"></i>
-                                  </a>
-                              </li>
-                          </ul>
-                          <div class="d-flex">
-                                  <span class="ml-3 text-danger">الأربعاء 4 مارس 2040</span>
-                                  <span class="text-danger">30 درجة مئوية ، لندن</span>
-                              </div>
-
-                             
-                       
-                      </div>
-                  </div>
-                  <div class="navbar-bottom">
-                      <div class="d-flex align-items-center">
+                 
+                  <div class="navbar-light">
+                      <div class="d-flex align-items-center justify-content-between">
                           <div>
-                              <a class="navbar-brand" href="#"><img src="../assets/images/logo.png"
+                              <a class="navbar-brand" href="#"><img src="/assets/images/logo.png"
                                       alt="" style="height: 50px;width:auto" /></a>
                           </div>  
-                          <div>
-                              <button class="navbar-toggler" type="button" data-target="#navbarSupportedContent"
-                                  aria-controls="navbarSupportedContent" aria-expanded="false"
-                                  aria-label="Toggle navigation">
-                                  <span class="navbar-toggler-icon"></span>
-                              </button>
-                              <div class="navbar-collapse justify-content-center collapse"
-                                  id="navbarSupportedContent">
-                                  <ul class="navbar-nav d-lg-flex justify-content-between align-items-center">
-                                      <li>
-                                          <button class="navbar-close">
-                                              <i class="mdi mdi-close"></i>
-                                          </button>
-                                      </li>
-                                      <li class="nav-item active">
-                                          <a class="nav-link" href="/index.html"> الصفحة الرئيسية</a>
-                                      </li>
-                                      <li class="nav-item">
-                                          <a class="nav-link" href="/pages/business.html">حدث اليوم</a>
-                                      </li>
-                                      <li class="nav-item">
-                                          <a class="nav-link" href="/pages/business.html">الدولي</a>
-                                      </li>
-                                      <li class="nav-item">
-                                          <a class="nav-link" href="/pages/business.html">المجتمع</a>
-                                      </li>
-                                      <li class="nav-item">
-                                          <a class="nav-link" href="/pages/business.html">الرياضي</a>
-                                      </li>
-                                      <li class="nav-item">
-                                          <a class="nav-link" href="/pages/business.html">الاقتصادي</a>
-                                      </li>
-                                      <li class="nav-item">
-                                          <a class="nav-link" href="/pages/business.html">السياسي</a>
-                                      </li>
-                                      <li class="nav-item">
-                                          <a class="nav-link" href="/pages/business.html">صحة</a>
-                                      </li>
-                                      <li class="nav-item">
-                                          <a class="nav-link" href="/pages/business.html">اساطير</a>
-                                      </li>
-                                      <li class="nav-item">
-                                          <a class="nav-link" href="/pages/contactus.html"> اتصل بنا</a>
-                                      </li>
-                                  </ul>
+                          <div class="input-group rounded col-lg-3 input-group-sm" >
+                              <div class="input-group-prepend">
+                              <span class="input-group-text search-icon border-0" id="search-addon">
+                                  <i class="fa fa-search"></i>
+                                </span>
+                              <input type="search" class="form-control form-search rounded" placeholder="بحث" aria-label="Search" aria-describedby="search-addon"/>
                               </div>
-                          </div>
-                         
+                            </div>
+                          
                       </div>
+                     
+                     
+                      
                   </div>
+
+                 
+            
               </nav>
           </div>
       </header>
 
         <!-- partial -->
-        <div class="flash-news-banner">
+        <div class="flash-news-banner fixed-bottom">
           <div class="container">
               <div class="d-lg-flex align-items-center justify-content-between">
                   <div class="d-flex align-items-center">
@@ -130,15 +88,45 @@
                           منذ القرن السادس عشر.
                       </p>
                   </div>
-                  <div class="d-flex">
-                      <span class="text-danger"></span>
-                      <button class="mr-3  btn btn-danger">تحميل اصدار اليوم</button>
-                  </div>
               </div>
           </div>
       </div>
-        <div class="content-wrapper">
+
+
+    
+        <div class="content-wrapper  pt-4">
           <div class="container">
+
+            <div class="swiper-container swiper mb-4">
+                        
+              <!-- Additional required wrapper -->
+              <div class="swiper-wrapper px-sm-4 px-md-0">
+                <!-- Slides -->
+                <div class="swiper-slide">
+                  <button type="button" style="width:100%" class="btn btn-primary btn-lg " dir="rtl">وطني</button>
+                </div>
+
+                <div class="swiper-slide">
+                  <button type="button" class="btn btn-primary btn-lg btn-block" dir="rtl">دولي</button>
+                </div>
+
+                <div class="swiper-slide">
+                  <button type="button" class="btn btn-primary btn-lg btn-block" dir="rtl">اقتصاد</button>
+              </div>
+
+              <div class="swiper-slide">
+                  <button type="button" class="btn btn-primary btn-lg btn-block" dir="rtl">رياضة</button>
+              </div>
+              </div>
+            
+              <!-- If we need navigation buttons -->
+              <div class="swiper-button-prev" style="right:-10px"></div>
+              <div class="swiper-button-next"style="left:-10px"></div>
+            
+              <!-- If we need scrollbar -->
+            
+            </div>
+
             <div class="col-sm-12">
               <div class="card" data-aos="fade-up">
                 <div class="card-body">
@@ -456,7 +444,7 @@
               <div class="container">
                   <div class="row">
                       <div class="col-sm-5">
-                          <img src="../assets/images/logo.png" class="footer-logo" alt="" />
+                          <img src="../assets/images/logo.png" class="footer-logo w-75" alt="" />
                           <h5 class="font-weight-normal mt-4 mb-5">
                               الصحيفة هي موقع الويب الخاص بك للأخبار والترفيه والموسيقى. نحن
                               تزويدك بآخر الأخبار ومقاطع الفيديو مباشرة من
@@ -604,5 +592,43 @@
     <script src="../assets/js/demo.js"></script>
     <script src="../assets/js/jquery.easeScroll.js"></script>
     <!-- End custom js for this page-->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
+    <script>
+        const swiper = new Swiper('.swiper', {
+  // Optional parameters
+slidesPerView: 4,
+  loop: true,
+  breakpoints: {
+            0: {
+                slidesPerView: 2,
+                spaceBetween: 16
+            },
+            600: {
+                slidesPerView: 2,
+                spaceBetween: 16
+            },
+            917: {
+                slidesPerView: 4,
+                spaceBetween: 10
+            },
+            // when window width is >= 1250px
+            1250: {
+                slidesPerView: 4,
+                spaceBetween: 10
+            },
+        },
+
+  // If we need pagination
+  
+
+  // Navigation arrows
+  navigation: {
+    nextEl: '.swiper-button-next',
+    prevEl: '.swiper-button-prev',
+  },
+
+
+});
+    </script>
   </body>
 </html>
